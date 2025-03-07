@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #f2f2f2;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #00008B;
+            color: white;
+            overflow: hidden;
+            border: 2px solid #2fa94f;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        nav a {
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .home-button {
+            background-color: #f0403b;
+            color: white;
+            border: none;
+        }
+        .materi-button {
+            background-color: #f5b621;
+            color: black;
+            border: none;
+        }
+        .penutup-button {
+            background-color: #4788e3;
+            color: white;
+            border: none;
+        }
+        .frame-container {
+            padding: 20px;
+            text-align: center;
+        }
+        .frame-item {
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: #00008B;
+            color: white;
+            text-align: right;
+            padding: 5px 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: 12px;
+            font-style: italic;
+            font-weight: bold;
+        }
+        footer span {
+            background-color: black;
+            padding: 2px 5px;
+        }
+        .button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .button:hover {
+            background-color: #3e8e41;
+        }
+        @media (max-width: 600px) {
+            .frame-item img,
+            .frame-item iframe {
+                width: 100%;
+                height: auto;
+            }
+            nav a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+            nav a:last-child {
+                float: none;
+            }
+        }
+        .kata-pengantar {
+            border: 2px solid #ccc;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            text-align: justify;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Selamat Datang di Digital Learning</h1>
+    </header>
+
+    <nav>
+        <div>
+            <a href="index.html" class="home-button">Home</a>
+            <a href="kelas 7.html" class="materi-button">Materi</a>
+        </div>
+        <span style="color: white; font-size: 1.5em; font-weight: bold;">IPA Terpadu untuk SMP/MTs</span>
+        <a href="index3.html" class="penutup-button">Penutup</a>
+    </nav>
+
+    <div class="frame-container">
+        <div class="kata-pengantar">
+            <h2>Kata Pengantar</h2>
+            <p>Selamat Datang di Dunia Ilmu Pengetahuan!</p>
+            <p>Hai, para penjelajah ilmu! Situs ini dirancang khusus untuk membantu siswa SMP kelas 9 memahami dan mengeksplorasi pelajaran IPA dengan cara yang menyenangkan dan inspiratif. Bersiaplah untuk menjelajahi keajaiban alam, mengungkap rahasia sains, dan menemukan pengetahuan baru yang akan membuka wawasanmu.</p>
+            <p>"Sains bukan hanya tentang pengetahuan, tetapi tentang keberanian untuk bertanya dan menjelajah."</p>
+            <p>Mari kita mulai petualangan ilmiahmu, karena belajar IPA itu keren dan penuh kejutan!</p>
+        </div>
+        <a href="kelas 7.html" class="button">Klik untuk melanjutkan</a>
+    </div>
+
+    <footer>
+        <span>Copyright &copy; ahmadzikrillah_2025</span>
+    </footer>
+
+</body>
+</html>
