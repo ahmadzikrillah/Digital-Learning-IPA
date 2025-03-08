@@ -1,0 +1,28 @@
+merah:#FF0000
+kuning:#FFFF00
+hijau:#008000
+
+
+warna copilot
+Magenta Affair: #a24ce5
+Sugar Rush : #df559e
+Rajah: #ffa858
+
+Flying Fish Blue : #1546c5
+Out of the Blue :#1096eb
+Turtle Warrior : #54b66d
+Finger Banana : #e3c211
+
+
+warna grow google
+Cascara #f0403b
+Waxy Corn #f5b621
+Leapfrog #2fa94f
+Olympic Blue #4788e3
+
+
+mukadimah:
+Selamat Datang di Dunia Ilmu Pengetahuan! Hai, para penjelajah ilmu! Situs ini dirancang khusus untuk membantu siswa SMP kelas 9 memahami dan mengeksplorasi pelajaran IPA dengan cara yang menyenangkan dan inspiratif. Bersiaplah untuk menjelajahi keajaiban alam, mengungkap rahasia sains, dan menemukan pengetahuan baru yang akan membuka wawasanmu.
+
+"Sains bukan hanya tentang pengetahuan, tetapi tentang keberanian untuk bertanya dan menjelajah." Mari kita mulai petualangan ilmiahmu, karena belajar IPA itu keren dan penuh kejutan!
+

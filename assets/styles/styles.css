@@ -1,0 +1,55 @@
+.content-container {  
+    padding: 20px;  
+    text-align: center; /* Menengahkan konten di dalam container */  
+}  
+.next-button {  
+    display: inline-block;  
+    padding: 10px 20px;  
+    background-color: #4CAF50; /* Warna hijau */  
+    color: white;  
+    text-decoration: none;  
+    border: none;  
+    border-radius: 5px;  
+    cursor: pointer;  
+    margin-top: 20px; /* Jarak dari iframe */  
+    /* Menambahkan margin kiri dan kanan untuk tampilan yang lebih baik */  
+    margin-left: auto;  
+    margin-right: auto;  
+.exam-frame {  
+    width: 90%; /* Lebar 90% */  
+    height: 600px; /* Tinggi frame */  
+    max-width: none; /* Menghilangkan batasan lebar maksimum */  
+    margin: 20px auto; /* Menengahkan frame */  
+    border: 1px solid #ccc; /* Garis tepi frame */  
+    display: block; /* Memastikan margin berfungsi dengan baik */  
+}   
+@media (max-width: 600px) {
+    .frame-item img,
+    .frame-item iframe {
+        width: 100%; /* Lebar penuh pada layar kecil */
+        height: auto; /* Tinggi menyesuaikan */
+    }
+    nav a {
+        float: none; /* Tombol navbar menumpuk pada layar kecil */
+        display: block;
+        text-align: left;
+    }
+    nav a:last-child {
+        float: none;
+    }
+}
+
+.home-button {
+    background-color: red;
+}
+.materi-button {
+    background-color: yellow;
+    color: black;
+}
+.penutup-button {
+    background-color: green;
+}
+
+.button:hover {
+    background-color: #3e8e41; /* Warna hijau yang lebih gelap */
+}
