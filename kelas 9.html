@@ -18,8 +18,8 @@
             height: 35px;
         }
         header h1 {
-            font-size: 1.5em; /* Kurangi ukuran font header */
-            margin: 0; /* Hilangkan margin default */
+            font-size: 1.5em;
+            margin: 0;
         }
         nav {
             background-color: #00008B;
@@ -146,16 +146,22 @@
         <a href="kelas 8.html" class="materi-button">Kelas 8</a>
         <a href="kelas 9.html" class="penutup-button">Kelas 9</a>
     </nav>
-    <section class="Materi">
+    <main class="Materi">
         <h2 class="video-title">Video Pembelajaran Organ Reproduksi</h2>
         <iframe
             id="youtube-video"
             src="https://www.youtube.com/embed/K4Rw3Xy1CH0?enablejsapi=1"
+            title="Video Pembelajaran Organ Reproduksi"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen>
         </iframe>
+        <a href="index.html" class="kembali-button">Kembali ke Beranda</a>
+        <a href="index3.html" class="bab-selanjutnya-button" id="next-button">Bab Selanjutnya</a>
     </main>
+    <footer>
+        <span style="background-color: black; color: white; padding: 2px 5px;">© 2025 Belajar IPA SMP @ahmadzikrillah</span>
+    </footer>
 
     <script>
         let player;
@@ -177,22 +183,12 @@
 
         function onPlayerStateChange(event) {
             if (event.data == YT.PlayerState.ENDED) {
-                alert('Video selesai diputar. Kembali ke halaman materi.');
+                alert('Terima kasih telah selesai menonton, silahkan klik tombol bab selanjutnya.');
                 document.getElementById('next-button').style.display = 'block';
             }
         }
 
-        document.getElementById('next-button').addEventListener('click', function() {
-            window.location.href = 'halaman-materi.html';
-        });
-
         loadYouTubeAPI();
     </script>
-        <a href="index.html" class="kembali-button">Kembali ke Beranda</a>
-        <a href="index3.html" class="bab-selanjutnya-button">Bab Selanjutnya</a>
-    </section>
-    <footer>
-        <span style="background-color: black; color: white; padding: 2px 5px;">© 2025 Belajar IPA SMP @ahmadzikrillah</span>
-    </footer>
 </body>
 </html>
