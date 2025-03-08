@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kelas 7 - IPA SMP</title>
+    <title>Materi</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -72,14 +72,14 @@
             background-color: #FF4500;
             transition: 0.3s ease;
         }
-        .kata-pengantar {
+        .isi-materi {
             border: 2px solid #ccc;
             padding: 20px;
             margin: 20px auto;
             max-width: 800px;
             text-align: justify;
             line-height: 1.6;
-        }
+       
         footer {
             background-color: #00008B;
             color: white;
@@ -90,19 +90,35 @@
             width: 100%;
             font-size: 12px;
         }
+        .exam-frame {
+            border: 2px solid #ccc;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            text-align: justify;
+            line-height: 1.6;
+.Materi-youtube {
+            border: 2px solid #ccc;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            text-align: justify;
+            line-height: 1.6;
     </style>
 </head>
 <body>
     <header>
-        <h1>Kelas 7</h1>
+        <h1>Halaman Materi</h1>
     </header>
     <nav>
-        <a href="kelas 7.html" class="home-button">Kelas 7</a>
-        <a href="kelas 8.html" class="materi-button">Kelas 8</a>
-        <a href="kelas 9.html" class="penutup-button">Kelas 9</a>
+        <a href="index.html">Home</a>
+        <a href="index2.html">Materi</a>
+        <a href="index3.html">Penutup</a>
     </nav>
-    <section class="kata-pengantar">
-        <h2>Cara Menggunakan dan Membaca Skala Mikrometer Sekrup</h2>
+
+    <div class="isi-materi">
+        <h2 class="materi-title">isi materi</h2>
+<h2>Cara Menggunakan dan Membaca Skala Mikrometer Sekrup</h2>
         <p>
             Dahulu orang sering menggunakan anggota tubuh sebagai satuan pengukuran, misalnya jari, hasta, kaki, jengkal, depa, langkah, dan lain-lain. Namun satuan-satuan tersebut bukan merupakan satuan baku, sehingga menyulitkan bila digunakan dalam komunikasi. Misalnya, kamu mungkin pernah mendengar satuan pengukuran seperti galon, yard, atau inchi.
         </p>
@@ -133,11 +149,57 @@
         <p>
             Contoh hasil pengukuran: 11,5 mm + (13 × 0,01 mm) = 11,63 mm.
         </p>
+
+             
+    </div>
+<section class="Materi-youtube">
+        <h2 class="video-title">Video Pembelajaran Organ Reproduksi</h2>
+        <iframe
+            id="youtube-video"
+            src="https://www.youtube.com/embed/K4Rw3Xy1CH0?enablejsapi=1"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+    </main>
+
+    <script>
+        let player;
+
+        function loadYouTubeAPI() {
+            const tag = document.createElement('script');
+            tag.src = "https://www.youtube.com/iframe_api";
+            const firstScriptTag = document.getElementsByTagName('script')[0];
+            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+        }
+
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('youtube-video', {
+                events: {
+                    'onStateChange': onPlayerStateChange
+                }
+            });
+        }
+
+        function onPlayerStateChange(event) {
+            if (event.data == YT.PlayerState.ENDED) {
+                alert('Video selesai diputar. Kembali ke halaman materi.');
+                document.getElementById('next-button').style.display = 'block';
+            }
+        }
+
+        document.getElementById('next-button').addEventListener('click', function() {
+            window.location.href = 'halaman-materi.html';
+        });
+
+        loadYouTubeAPI();
+    </script>
         <a href="index.html" class="kembali-button">Kembali ke Beranda</a>
         <a href="index3.html" class="bab-selanjutnya-button">Bab Selanjutnya</a>
     </section>
     <footer>
-         <span style="background-color: black; color: white; padding: 2px 5px;">© 2025 Belajar IPA SMP @ahmadzikrillah</span>
+        Copyright &copy; ahmadzikrillah_2025
     </footer>
+
 </body>
 </html>
