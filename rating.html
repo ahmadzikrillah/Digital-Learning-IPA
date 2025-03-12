@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Beri Rating</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .rating-form {
+            width: 300px;
+            padding: 30px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .rating-question {
+            margin-bottom: 25px;
+        }
+
+        .rating-question label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .rating-stars {
+            display: flex;
+            justify-content: center;
+        }
+
+        .rating-stars input[type="radio"] {
+            display: none;
+        }
+
+        .rating-stars label {
+            font-size: 30px;
+            color: #ddd;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        .rating-stars input[type="radio"]:checked + label,
+        .rating-stars label:hover {
+            color: #ffc107;
+        }
+
+        button {
+            padding: 12px 25px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #hasilPenilaian {
+            margin-top: 30px;
+            text-align: center;
+            display: none;
+        }
+
+        #tambahanTeks {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <h1>Beri Rating</h1>
+    <form class="rating-form" id="ratingForm">
+        <div class="rating-question">
+            <label>Kemudahan Aplikasi:</label>
+            <div class="rating-stars">
+                <input type="radio" id="q1-star1" name="q1" value="1">
+                <label for="q1-star1">★</label>
+                <input type="radio" id="q1-star2" name="q1" value="2">
+                <label for="q1-star2">★</label>
+                <input type="radio" id="q1-star3" name="q1" value="3">
+                <label for="q1-star3">★</label>
+                <input type="radio" id="q1-star4" name="q1" value="4">
+                <label for="q1-star4">★</label>
+                <input type="radio" id="q1-star5" name="q1" value="5">
+                <label for="q1-star5">★</label>
+            </div>
+        </div>
+        <div class="rating-question">
+            <label>Konten Materi:</label>
+            <div class="rating-stars">
+                <input type="radio" id="q2-star1" name="q2" value="1">
+                <label for="q2-star1">★</label>
+                <input type="radio" id="q2-star2" name="q2" value="2">
+                <label for="q2-star2">★</label>
+                <input type="radio" id="q2-star3" name="q2" value="3">
+                <label for="q2-star3">★</label>
+                <input type="radio" id="q2-star4" name="q2" value="4">
+                <label for="q2-star4">★</label>
+                <input type="radio" id="q2-star5" name="q2" value="5">
+                <label for="q2-star5">★</label>
+            </div>
+        </div>
+        <button type="button" onclick="tampilkanHasil()">Kirim Penilaian</button>
+    </form>
+    <div id="hasilPenilaian">
+        <h2>Terima kasih atas penilaian Anda!</h2>
+        <p id="hasilQ1"></p>
+        <p id="hasilQ2"></p>
+        <p id="tambahanTeks">adZikri@2025</p>
+    </div>
+
+    <script>
+        function tampilkanHasil() {
+            var q1 = document.querySelector('input[name="q1"]:checked');
+            var q2 = document.querySelector('input[name="q2"]:checked');
+
+            if (q1 && q2) {
+                document.getElementById('hasilQ1').textContent = "Kemudahan Aplikasi: " + q1.value + " bintang";
+                document.getElementById('hasilQ2').textContent = "Konten yang berikan: " + q2.value + " bintang";
+
+                document.getElementById('ratingForm').style.display = 'none';
+                document.getElementById('hasilPenilaian').style.display = 'block';
+            } else {
+                alert("Mohon isi semua penilaian!");
+            }
+        }
+    </script>
+</body>
+</html>
